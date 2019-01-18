@@ -1,0 +1,99 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Aprendiendo HTML">
+        <title>Mi primer pahina Wen con HTML5</title>
+
+        <link rel="stylesheet" href="css/estilos.css">
+
+    </head>
+    <body>
+        <h1>H1-CONTENIDO DE PAGINA WEB</h1>
+        <h2 id="titulo" class="mio">H2- SUBTITULOS DE PAGINA</h2>
+        <H3>H3- SUBTITULOS</H3>
+
+        <nav>
+            <ul>
+                <li><a href="inicio.html">inicio</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+
+            </ul>
+        </nav>
+            <br> 
+                <p class="rojo" > P-este es un <b>Parrafo</b> de mi pagina - Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat, reiciendis, eos dolorum saepe minima odio 
+                    aspernatur, amet commodi quibusdam quis quam nemo praesentium. Laborum doloremque cum eius eveniet eos? </p>
+
+                    <p id="rojo2" > P2-este es un <b>Parrafo</b> de mi pagina - Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat, reiciendis, eos dolorum saepe minima odio 
+                        aspernatur, amet commodi quibusdam quis quam nemo praesentium. Laborum doloremque cum eius eveniet eos? </p>
+    
+
+            <form class="formulario">
+
+                <fieldset>
+
+                <legend>FIELDSET-Legend</legend>   
+                <label for="nombre"> Nombre </label>
+                <input type="text" name="nombre" id="nombre" placeholder="tu nombre" autocomplete="on" required>
+                <br>
+                <br>
+                <label for="apelllido"> Nombre</label>
+                <input type="text" name="apelllido" id="apelllido" placeholder="tu apelllido" autocomplete="on">
+                
+                <br> <br>
+                <label>Fecha de Cumpleaños</label> 
+                <input type="date"   name="fecha">
+
+                <br><br>
+                <label>Barra de Seleccion</label>
+                <input type="range" name="rango" min="1" max="20">
+
+                <br><br>    
+                <input type="submit" value="ENVIAR">
+                
+                                
+            </fieldset>
+                <br> <br>
+            <fieldset>
+
+                <legend>SELECCIONES</legend> <br>
+                <label for="Sexo:"> Sexo: </label> <br>
+                <input type="radio" id="sexo" name="sexo" value="Hombre" checked > Hombre
+                <input type="radio" id="sexo" name="sexo" value="Mujer"  > Mujer
+                <input type="radio" id="sexo" name="sexo" value="Otro"  > Otro
+
+            <br><br>
+
+                <label>Turno:</label>
+                <select class="turno" name="turno">
+                    <option value="Matutino">Matutino</option>
+                    <option value="Vespertino"selected> Vespertino</option>
+                    <option value="Nocturno">Nocturno</option>
+                </select>
+
+                <br><br>
+
+                <label>Que Curso te Gustaria</label>
+                <input list="propuesta" name="encuesta">
+                <datalist id="propuesta">
+                    <option value="JQuery">
+                    <option value="php">
+                    <option value="java">
+                    <option value="sql">
+                </datalist>
+
+                <br><br>
+                <label>Elige tus cursos</label>
+                <br>
+                <input type="checkbox" value="Jquery"> JQuery <br>
+                <input type="checkbox" value="php"> php <br>
+                <input type="checkbox" value="java"> java <br>
+                <input type="checkbox" value="sql"> sql <br>
+                <br>
+                <button type="reset" > Borrar</button>
+
+            </fieldset>
+            </form>
+
+    </body>
+</html>
